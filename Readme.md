@@ -431,7 +431,6 @@ Define conteúdo e estrutura.
 
 
 - Seletor de elemento
-
 ![](resources/imgs/seletor-elemento.png)
 
 - Seletor de todos elementos
@@ -458,7 +457,6 @@ Define conteúdo e estrutura.
 - Combinador + e ~
     - Elemento F é irmão de E e precedido por E.
     - Elemento F irmão de E e imediatamente precedido por E.
-
 ![](resources/imgs/elemento-irmao-de-e-precedido.png)
 
 

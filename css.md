@@ -13,7 +13,7 @@
   </head>  
 ```
 
-- Entre tags <style> no próprio HTML
+- Entre tags ```<style> no próprio HTML```
 ```html
     - <style>
 	div {
@@ -32,7 +32,6 @@
 - Seletores de elementos
 ![](resources/imgs/seletores-elemento.png)
 
-
 - Seletor de elemento
 ![](resources/imgs/seletor-elemento.png)
 
@@ -47,10 +46,10 @@
 
 
 - Combinador Descendente e filho
-    - Elemento F filho de E.
-    - Elemento F descendente de E.
-
 ![](resources/imgs/combinador-elemento-filho.png)
+
+    - Elemento F descendente de E.
+    - Elemento F filho de E.
 
 
     - .c1 div 
@@ -58,15 +57,15 @@
     - .c1 > div
         - divs filhos diretos da classe c1
 
+
 - Combinador + e ~
+![](resources/imgs/elemento-irmao-de-e-precedido.png)
+
     - Elemento F é irmão de E e precedido por E.
     - Elemento F irmão de E e imediatamente precedido por E.
 
-![](resources/imgs/elemento-irmao-de-e-precedido.png)
-
 
 - Elemento E com atributo atrib de valor x.
-
 
 
 ### Pseudoclasses 
@@ -236,7 +235,7 @@ ul.listaBonita > li:not(.selecionado) + li {
 ```
 
 
-- [FEN 3.3   Dimensionamento e posicionamento de elementos  correto](https://www.youtube.com/watch?v=YT6gZuY7ZFY)
+- [FEN 3.3   Dimensionamento e posicionamento de elementos correto - YouTube](https://www.youtube.com/watch?v=YT6gZuY7ZFY)
 
 
 

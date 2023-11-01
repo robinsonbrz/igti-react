@@ -69,6 +69,9 @@
 
 
 ### Pseudoclasses 
+Pseudo-classes are keywords that specify a special state of an element in CSS. They are used to style elements based on their attributes, content, or interaction. 
+
+
 
 - Pseudoclasses
 ![](resources/imgs/pseudoclasses.png)

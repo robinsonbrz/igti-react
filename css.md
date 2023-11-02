@@ -1,91 +1,84 @@
-
 # CSS  - Cascade Style Sheet - folha de estilo em cascata
 
 ## Utilizando CSS
 
 - [FEN 3.1   Introdução a CSS e sintaxe básica](https://www.youtube.com/watch?v=7ZnsxW9p8dk)
 
-
 - Referência ao arquivo pelo html
-```html
-<head>
+  
+  ```html
+  <head>
     <link rel="stylesheet" href="exemplo-1.css" />
   </head>  
-```
+  ```
 
 - Entre tags ```<style> no próprio HTML```
-```html
+  
+  ```html
     - <style>
-	div {
-	    color: blue;
-	}
-</style>
-```
+    div {
+        color: blue;
+    }
+  </style>
+  ```
 
 - Semântica
-![](resources/imgs/semantica-css.png)
-
+  ![](resources/imgs/semantica-css.png)
 
 - [3.2.1 Seletores CSS](https://www.youtube.com/watch?v=AUG6ml3v8Yk)
 
-
 - Seletores de elementos
-![](resources/imgs/seletores-elemento.png)
+  ![](resources/imgs/seletores-elemento.png)
 
 - Seletor de elemento
-![](resources/imgs/seletor-elemento.png)
+  ![](resources/imgs/seletor-elemento.png)
 
 - Seletor de todos elementos
-![](resources/imgs/seletor-todos-elementos.png)
+  ![](resources/imgs/seletor-todos-elementos.png)
 
 - Seletor por classe
-![](resources/imgs/seletor-classe.png)
+  ![](resources/imgs/seletor-classe.png)
 
 - Elemento com atributo id igual a id.
-![](resources/imgs/seletor-elemento-com-id.png)
-
+  ![](resources/imgs/seletor-elemento-com-id.png)
 
 - Combinador Descendente e filho
-![](resources/imgs/combinador-elemento-filho.png)
-
-    - Elemento F descendente de E.
-    - Elemento F filho de E.
-
+  ![](resources/imgs/combinador-elemento-filho.png)
+  
+  - Elemento F descendente de E.
+  - Elemento F filho de E.
 
     - .c1 div 
         - divs descendentes de c1
     - .c1 > div
         - divs filhos diretos da classe c1
 
-
 - Combinador + e ~
-![](resources/imgs/elemento-irmao-de-e-precedido.png)
-
-    - Elemento F é irmão de E e precedido por E.
-    - Elemento F irmão de E e imediatamente precedido por E.
-
+  ![](resources/imgs/elemento-irmao-de-e-precedido.png)
+  
+  - Elemento F é irmão de E e precedido por E.
+  - Elemento F irmão de E e imediatamente precedido por E.
 
 - Elemento E com atributo atrib de valor x.
 
+### Pseudoclasses
 
-### Pseudoclasses 
 Pseudo-classes are keywords that specify a special state of an element in CSS. They are used to style elements based on their attributes, content, or interaction. 
 
-
 - Pseudoclasses
-![](resources/imgs/pseudoclasses.png)
+  ![](resources/imgs/pseudoclasses.png)
 
 - Seletores compostos
-![](resources/imgs/seletores-compostos.png)
+  ![](resources/imgs/seletores-compostos.png)
 
 - Seletores complexos
-![](resources/imgs/seletores-complexos.png)
+  ![](resources/imgs/seletores-complexos.png)
 
 - Especifidade de seletores
-![](resources/imgs/especificidade-01.png)
+  ![](resources/imgs/especificidade-01.png)
 
 - Especifidade de seletores
-![](resources/imgs/especificidade-02.png)
+  ![](resources/imgs/especificidade-02.png)
 
 - [FEN 3.2.2 Usar seletores para estilizar uma lista](https://www.youtube.com/watch?v=nXnoATgeniA)
 
@@ -147,7 +140,6 @@ ul.listaBonita > li:not(.selecionado) + li {
 ul.listaBonita > li:hover {
   background-color: #ebebeb;
 }
-
 ```
 
 ```html
@@ -236,32 +228,152 @@ ul.listaBonita > li:not(.selecionado) + li {
 }
 ```
 
-
 - [FEN 3.3   Dimensionamento e posicionamento de elementos correto - YouTube](https://www.youtube.com/watch?v=YT6gZuY7ZFY)
 
 
 
-- [FEN 3.4   Posicionamento fora do normal flow - YouTube](https://www.youtube.com/watch?v=OJR2DULSbXs)
+Nesta aula 
+
+Estudar dimensionamento de lementos:
+
+- box model
+
+- Unidades de medidas mais utilizadas
+
+Entender como os elementos são posicionados na página
+
+- Normal flow
+
+- text-align
+
+- Baseline e vertical-align
 
 
 
-- [FEN 3.5 Flexbox layout - YouTube ](https://www.youtube.com/watch?v=sXpLceQ6nyI)
+## Box model
+
+![](/home/rob/.config/marktext/images/2023-11-02-16-13-02-image.png)
 
 
 
-- [FEN 3.5.1   Imitar layout Stack Overflow - YouTube ](https://www.youtube.com/watch?v=qZmjSneDudk)
+![](/home/rob/.config/marktext/images/2023-11-02-16-18-43-ksnip_20231102-161445.png)
 
 
 
-- [FEN 3.5.2   Imitar layout Stack Overflow parte 2 - YouTube ](https://www.youtube.com/watch?v=yq6lDwT8udo)
+## Unidades de medida
+
+![](/home/rob/.config/marktext/images/2023-11-02-16-22-02-image.png)
 
 
 
-- [FEN 3.5.3   Imitar layout Stack Overflow parte 3 - YouTube](https://www.youtube.com/watch?v=YyQeFMRsAdU)
+## Overflow
 
+O comportamento quando um conteúdo não cabe dentro de um elemento é determinado pela propriedade overflow, que pode ter os valores:
+
+- visible (padrão): conteúdo pode ser renderizado fora do box.
+
+- hidden: conteúdo é cortado.
+
+- scroll: exibe scroll bar sempre.
+
+-  auto: exibe scroll bar, se precisar.
+
+
+
+Posicionamento de boxes
+
+- Se não especificado, segue o normal flow (flow layout)
+
+- Dois tipos de boxes 
+  
+  - block box
+  
+  -  inline box
+
+Posicionamento padrão dos elementos (normal flow)
+
+
+
+Padrão, os elementos são dispostos na página em linha (ao lado do
+anterior), 
+
+
+
+### Block box
+
+- Exibido em uma nova linha
+
+- Largura 100% da largura disponível em seu container
+
+- Exemplos:  h1, div e p são block boxes, 
+
+### Inline box
+
+- Exibidos na mesma linha (Pode haver quebra se não houver espaço)
+
+- widht e height não se aplicam
+
+- margin, padding e border verticais se comportam diferente (não empurram os boxes vizinhos)
+
+- span, a, img, em, strong
+  
+
+Margens verticais não se somam. (margin colapse)
+
+Se os dois elementos tiverem margin = 8 a distância entre eles será 8 e não a soma 8+8.
+
+
+
+### Propriedade text-align
+
+Somente elementos in-line, não funciona para block boxes
+
+- cujos valores podem ser: **left, right, center, justify**
+
+### Propriedade vertical-align
+
+- Controla o alinhamento vertical de inline boxes, ou células de tabelas
+
+- Valores comuns: baseline, middle, top, bottom
+
+
+
+<img title="" src="file:///home/rob/.config/marktext/images/2023-11-02-16-43-45-image.png" alt="" width="377">
+
+
+
+<img src="file:///home/rob/.config/marktext/images/2023-11-02-16-46-36-image.png" title="" alt="" width="379">
+
+
+
+<img src="file:///home/rob/.config/marktext/images/2023-11-02-16-47-08-image.png" title="" alt="" width="337">
+
+
+
+<img src="file:///home/rob/.config/marktext/images/2023-11-02-16-47-36-image.png" title="" alt="" width="382">
+
+![](/home/rob/.config/marktext/images/2023-11-02-16-50-09-image.png)
+
+
+[FEN 3.4   Posicionamento fora do normal flow - YouTube](https://www.youtube.com/watch?v=OJR2DULSbXs)
+
+
+[FEN 3.5 Flexbox layout - YouTube ](https://www.youtube.com/watch?v=sXpLceQ6nyI)
+
+
+[FEN 3.5.1   Imitar layout Stack Overflow - YouTube ](https://www.youtube.com/watch?v=qZmjSneDudk)
+
+
+[FEN 3.5.2   Imitar layout Stack Overflow parte 2 - YouTube ](https://www.youtube.com/watch?v=yq6lDwT8udo)
+
+
+[FEN 3.5.3   Imitar layout Stack Overflow parte 3 - YouTube](https://www.youtube.com/watch?v=YyQeFMRsAdU)
+
+
+
+jQuery sample Hide div
 
 ```javascript
-
     <div class="container-fluid">
         <div class="alert alert-danger" style="display: none;">
         <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
@@ -284,8 +396,6 @@ ul.listaBonita > li:not(.selecionado) + li {
             event.preventDefault();
         }
     });
-    
+
   </script>
-
 ```
-

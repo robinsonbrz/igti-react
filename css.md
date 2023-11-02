@@ -72,7 +72,6 @@
 Pseudo-classes are keywords that specify a special state of an element in CSS. They are used to style elements based on their attributes, content, or interaction. 
 
 
-
 - Pseudoclasses
 ![](resources/imgs/pseudoclasses.png)
 
@@ -261,5 +260,32 @@ ul.listaBonita > li:not(.selecionado) + li {
 - [FEN 3.5.3   Imitar layout Stack Overflow parte 3 - YouTube](https://www.youtube.com/watch?v=YyQeFMRsAdU)
 
 
+```javascript
 
+    <div class="container-fluid">
+        <div class="alert alert-danger" style="display: none;">
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+        Verifique os erros abaixo e corríja-os antes de enviar os dados novamente.
+        </div>
+    </div>
+
+  <script type="text/javascript">
+    $(".form.theme-form").submit(function(event) {
+        let fileInput = $('#id_arquivo');
+        let sizeInMB = (fileInput[0].files[0].size / 1048576 ).toFixed(2);
+        const maximumFileSizeMB = 99
+        $("#alert-file-size").removeClass("text-danger");
+        $("#alert-file-size").text("O tamanho do arquivo não deve exceder 99 MB");
+        if (fileInput[0].files.length > 0 && sizeInMB > maximumFileSizeMB ) {
+            $("#alert-file-size").addClass("text-danger");
+            $(".alert.alert-danger").css("display", "block");
+            $(".alert.alert-danger").delay(5000).fadeOut();
+            $("#alert-file-size").text("O arquivo: " + fileInput[0].files[0].name + " possui: " + sizeInMB + " MB.");
+            event.preventDefault();
+        }
+    });
+    
+  </script>
+
+```
 

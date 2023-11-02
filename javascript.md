@@ -117,8 +117,6 @@ frutas[3]
 
 
 
-
-
 ### Interação com o DOM
 
 - [FEN 5.1   Interação básica com o DOM - YouTube](https://www.youtube.com/watch?v=qsuTjigeJ9I) 

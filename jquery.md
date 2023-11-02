@@ -119,9 +119,6 @@ Select and manipulate HTML elements
     ___
 
 
-
-Here is the table you requested:
-
 | Syntax | Description | 
 | --- | --- |
 | `*` | Selects all elements  `*` |
@@ -145,4 +142,33 @@ Refering external js jQuery file
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="my_jquery_functions.js"></script>
 </head> 
+```
+
+jQuery sample Hide div
+
+```javascript
+    <div class="container-fluid">
+        <div class="alert alert-danger" style="display: none;">
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+        Verifique os erros abaixo e corríja-os antes de enviar os dados novamente.
+        </div>
+    </div>
+
+  <script type="text/javascript">
+    $(".form.theme-form").submit(function(event) {
+        let fileInput = $('#id_arquivo');
+        let sizeInMB = (fileInput[0].files[0].size / 1048576 ).toFixed(2);
+        const maximumFileSizeMB = 99
+        $("#alert-file-size").removeClass("text-danger");
+        $("#alert-file-size").text("O tamanho do arquivo não deve exceder 99 MB");
+        if (fileInput[0].files.length > 0 && sizeInMB > maximumFileSizeMB ) {
+            $("#alert-file-size").addClass("text-danger");
+            $(".alert.alert-danger").css("display", "block");
+            $(".alert.alert-danger").delay(5000).fadeOut();
+            $("#alert-file-size").text("O arquivo: " + fileInput[0].files[0].name + " possui: " + sizeInMB + " MB.");
+            event.preventDefault();
+        }
+    });
+
+  </script>
 ```

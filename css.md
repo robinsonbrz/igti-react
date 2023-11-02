@@ -252,17 +252,17 @@ Entender como os elementos são posicionados na página
 
 ## Box model
 
-![](/home/rob/.config/marktext/images/2023-11-02-16-13-02-image.png)
+![](resources/imgs/2023-11-02-16-13-02-image.png)
 
 
 
-![](/home/rob/.config/marktext/images/2023-11-02-16-18-43-ksnip_20231102-161445.png)
+![](resources/imgs/2023-11-02-16-18-43-ksnip_20231102-161445.png)
 
 
 
 ## Unidades de medida
 
-![](/home/rob/.config/marktext/images/2023-11-02-16-22-02-image.png)
+![](resources/imgs/2023-11-02-16-22-02-image.png)
 
 
 
@@ -338,19 +338,19 @@ Somente elementos in-line, não funciona para block boxes
 
 
 
-<img title="" src="file:///home/rob/.config/marktext/images/2023-11-02-16-43-45-image.png" alt="" width="377">
+<img title="" src="resources/imgs/2023-11-02-16-43-45-image.png" alt="" width="377">
+
+
+<img src="resources/imgs/2023-11-02-16-46-36-image.png" title="" alt="" width="379">
 
 
 
-<img src="file:///home/rob/.config/marktext/images/2023-11-02-16-46-36-image.png" title="" alt="" width="379">
+<img src="resources/imgs/2023-11-02-16-47-08-image.png" title="" alt="" width="337">
 
 
 
-<img src="file:///home/rob/.config/marktext/images/2023-11-02-16-47-08-image.png" title="" alt="" width="337">
+<img src="resources/imgs/2023-11-02-16-47-36-image.png" title="" alt="" width="382">
 
-
-
-<img src="file:///home/rob/.config/marktext/images/2023-11-02-16-47-36-image.png" title="" alt="" width="382">
 
 ![](/home/rob/.config/marktext/images/2023-11-02-16-50-09-image.png)
 

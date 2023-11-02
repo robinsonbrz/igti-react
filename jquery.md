@@ -39,12 +39,14 @@ Add jQuery to a webpage
 
 - Select HTML elements and performing some action
 
-```html
- $(selector).action()
-```
+    ```html
+    $(selector).action()
+    ```
 
 A **$** sign to define/access jQuery
+
 A **(selector)** to "query (or find)" HTML elements
+
 A jQuery **action()** to be performed on the element(s)
 
 

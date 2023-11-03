@@ -106,56 +106,173 @@ frutas[3]
     - ||    // Ou lógico
   
   - Aritméticos
-  
-  - Comparação
 
-- [FEN 4.4   Funções e escopo](https://www.youtube.com/watch?v=i10fbmje57w)
+            ![](resources/imgs/2023-11-02-20-00-23-image.png)
 
-- [FEN 4.5   Comandos de decisão](https://www.youtube.com/watch?v=_OLrl5nraIo)
+        - Operadores aritméticos de atribuição
 
-- [FEN 4.6 Comandos de repetição](https://www.youtube.com/watch?v=eAUyHzzo0YI)
+            ![](resources/imgs/2023-11-02-20-01-32-image.png)
 
-- [FEN 4.6.1 Desafio guiado Palíndromo](https://www.youtube.com/watch?v=yOZew8rFkmY)
+        - Operadores de incremento / decremento
+
+            ![](resources/imgs/2023-11-02-20-02-31-image.png)
+
+        - Comparação
+
+            ![](resources/imgs/2023-11-02-20-03-04-image.png)            
+
+        - Igualdade
+
+            ![](resources/imgs/2023-11-02-20-03-32-image.png)
+
+            === comparação estrita, somente tipos iguais
+
+            == compara mesmo tipos diferentes
+
+           - Precedência de operadores
+
+                ![](resources/imgs/2023-11-02-20-04-45-image.png)
+
+[FEN 4.4   Funções e escopo](https://www.youtube.com/watch?v=i10fbmje57w)
+
+![](/home/rob/.config/marktext/images/2023-11-02-20-12-21-image.png)
+
+![2023-11-02-20-13-31-image.png](/home/rob/.config/marktext/images/2023-11-02-20-13-31-image.png)
+
+Variável global
+
+Disponível em todo código, inclusive em outros arquivos de script carregados.
+
+![](/home/rob/.config/marktext/images/2023-11-02-20-14-37-image.png)
+
+
+
+[FEN 4.5   Comandos de decisão](https://www.youtube.com/watch?v=_OLrl5nraIo)
+
+### Comandos de decisão
+
+<img src="file:///home/rob/.config/marktext/images/2023-11-02-20-17-20-image.png" title="" alt="" width="210">
+
+![](/home/rob/.config/marktext/images/2023-11-02-20-18-36-image.png)
+
+&&
+
+![](/home/rob/.config/marktext/images/2023-11-02-20-19-20-image.png)
+
+Ternário
+
+![](/home/rob/.config/marktext/images/2023-11-02-20-20-02-image.png)
+
+switch
+
+![](/home/rob/.config/marktext/images/2023-11-02-20-20-56-image.png)
+
+
+
+[FEN 4.6 Comandos de repetição](https://www.youtube.com/watch?v=eAUyHzzo0YI)
+
+### Comandos de repetição
+
+![](/home/rob/.config/marktext/images/2023-11-02-20-22-15-image.png)
+
+while
+
+![](/home/rob/.config/marktext/images/2023-11-02-20-23-42-image.png)
+
+do while
+
+![](/home/rob/.config/marktext/images/2023-11-02-20-24-03-image.png)
+
+for
+
+![](/home/rob/.config/marktext/images/2023-11-02-20-24-55-image.png)
+
+Possível utilizar o break e continue, para parar e pular uma repetição respectivamente
+
+
+
+[FEN 4.6.1 Desafio guiado Palíndromo](https://www.youtube.com/watch?v=yOZew8rFkmY)
+
+![](/home/rob/.config/marktext/images/2023-11-02-20-27-30-image.png)
 
 ### Interação com o DOM
 
-- [FEN 5.1   Interação básica com o DOM - YouTube](https://www.youtube.com/watch?v=qsuTjigeJ9I) 
 
-- [FEN 5.2   Eventos - YouTube](https://www.youtube.com/watch?v=QboE5JIVdPk) 
 
-- [FEN 5.3   Criando elementos dinamicamente - YouTube](https://www.youtube.com/watch?v=m6q2IVMb0gg) 
+[FEN 5.1   Interação básica com o DOM - YouTube](https://www.youtube.com/watch?v=qsuTjigeJ9I) 
 
-- [FEN 5.4   Alterando estilos de elementos - YouTube](https://www.youtube.com/watch?v=yo05S4LDnf4) 
+
+[FEN 5.2   Eventos - YouTube](https://www.youtube.com/watch?v=QboE5JIVdPk) 
+
+
+[FEN 5.3   Criando elementos dinamicamente - YouTube](https://www.youtube.com/watch?v=m6q2IVMb0gg) 
+
+
+[FEN 5.4   Alterando estilos de elementos - YouTube](https://www.youtube.com/watch?v=yo05S4LDnf4) 
 
 ### Orientação a objetos em JavaScript
 
-- [FEN 6.1 Instanciando objetos - YouTube](https://www.youtube.com/watch?v=2eOTY8vCVH4) 
-- [FEN 6.2 Prototype chain - YouTube](https://www.youtube.com/watch?v=dfS0D3P-m5g)
-- [FEN 6.3 Classes e herança - YouTube](https://www.youtube.com/watch?v=Y5f-P6KokdY) 
+
+
+[FEN 6.1 Instanciando objetos - YouTube](https://www.youtube.com/watch?v=2eOTY8vCVH4) 
+
+
+[FEN 6.2 Prototype chain - YouTube](https://www.youtube.com/watch?v=dfS0D3P-m5g)
+
+
+[FEN 6.3 Classes e herança - YouTube](https://www.youtube.com/watch?v=Y5f-P6KokdY) 
 
 ### JavaScript moderno
 
-- [FEN 7.1 Let, const, desestruturação, spread e template strings - YouTube](https://www.youtube.com/watch?v=sYvstzx7fCA)
-- [FEN 7.2 Arrow functions - YouTube](https://www.youtube.com/watch?v=TuQlhJywj-Y)
-- [FEN 7.3 Manipulação de arrays - YouTube](https://www.youtube.com/watch?v=3KfGPr1WGgg)
-- [FEN 7.4 Módulos - YouTube](https://www.youtube.com/watch?v=TLYfeciIiWg) 
+[FEN 7.1 Let, const, desestruturação, spread e template strings - YouTube](https://www.youtube.com/watch?v=sYvstzx7fCA)
 
+[FEN 7.2 Arrow functions - YouTube](https://www.youtube.com/watch?v=TuQlhJywj-Y)
+
+
+[FEN 7.3 Manipulação de arrays - YouTube](https://www.youtube.com/watch?v=3KfGPr1WGgg)
+
+
+[FEN 7.4 Módulos - YouTube](https://www.youtube.com/watch?v=TLYfeciIiWg) 
 ### Requisições HTTP em JavaScript - Parte I
 
-- [FEN 8.1 A API fetch - YouTube](https://www.youtube.com/watch?v=F2hhQfMBuQc)
-- [FEN 8.2  Dominando promises carregamento sequencial e paralelo - YouTube](https://www.youtube.com/watch?v=QzVPmWWAltg)
-- [FEN 8.3 Async await - YouTube](https://www.youtube.com/watch?v=SU6i_QVFNLE) 
-- [FEN 8.4   Tratamento de erros - YouTube](https://www.youtube.com/watch?v=5Um7eN7Y434) 
+
+
+[FEN 8.1 A API fetch - YouTube](https://www.youtube.com/watch?v=F2hhQfMBuQc)
+
+
+[FEN 8.2  Dominando promises carregamento sequencial e paralelo - YouTube](https://www.youtube.com/watch?v=QzVPmWWAltg)
+
+
+
+[FEN 8.3 Async await - YouTube](https://www.youtube.com/watch?v=SU6i_QVFNLE) 
+
+
+[FEN 8.4   Tratamento de erros - YouTube](https://www.youtube.com/watch?v=5Um7eN7Y434) 
+
 
 ### Requisições HTTP em JavaScript - Parte II
 
-- [FEN 8.4.1   Desafio guiado CRUD completo - YouTube](https://www.youtube.com/watch?v=DnCRizbW51U)
-- [FEN 8.4.2   Desafio guiado CRUD completo parte 2 - YouTube](https://www.youtube.com/watch?v=fzFJ3KYRFpI)
-- [FEN 8.4.3   Desafio guiado CRUD completo parte 3 - YouTube](https://www.youtube.com/watch?v=j1FNmGzjvdU)
-- [FEN 8.4.4   Desafio guiado CRUD completo parte 4 - YouTube](https://www.youtube.com/watch?v=RQm2NQgh70E)
+
+
+[FEN 8.4.1   Desafio guiado CRUD completo - YouTube](https://www.youtube.com/watch?v=DnCRizbW51U)
+
+
+[FEN 8.4.2   Desafio guiado CRUD completo parte 2 - YouTube](https://www.youtube.com/watch?v=fzFJ3KYRFpI)
+
+
+[FEN 8.4.3   Desafio guiado CRUD completo parte 3 - YouTube](https://www.youtube.com/watch?v=j1FNmGzjvdU)
+
+
+
+[FEN 8.4.4   Desafio guiado CRUD completo parte 4 - YouTube](https://www.youtube.com/watch?v=RQm2NQgh70E)
+
+
 
 ### Tarefas temporizadas ou periódicas em JavaScript
 
-- [FEN 9 1   setTimeout - YouTube](https://www.youtube.com/watch?v=ShxdFG9-tbs)
-- [FEN 9.2   setInterval - YouTube](https://www.youtube.com/watch?v=Yj-aVw8ZajA)
-- [FEN 9.3   requestAnimationFrame - YouTube](https://www.youtube.com/watch?v=JbRHGtaVs1I)
+
+[FEN 9 1   setTimeout - YouTube](https://www.youtube.com/watch?v=ShxdFG9-tbs)
+
+[FEN 9.2   setInterval - YouTube](https://www.youtube.com/watch?v=Yj-aVw8ZajA)
+
+[FEN 9.3   requestAnimationFrame - YouTube](https://www.youtube.com/watch?v=JbRHGtaVs1I)

@@ -38,6 +38,7 @@ Define conteúdo e estrutura.
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 ```
+
 ### Elementos basicos
 ```html
 <!-- Isto e um comentario HTML -->
@@ -79,6 +80,7 @@ Define conteúdo e estrutura.
   </p> 
 
 ```
+
 ### Imagens
 
 ```html
@@ -109,6 +111,7 @@ Define conteúdo e estrutura.
     >.
 </p>
 ```
+
 ```html
 <p>
   Links podem ser relativos ou absolutos, dependendo do formato do atributo href. Este é um
@@ -116,6 +119,7 @@ Define conteúdo e estrutura.
     >.
 </p>
 ```
+
 ```html
 <p>
     Também podemos abrir link em nova aba com o atributo
@@ -199,6 +203,7 @@ Define conteúdo e estrutura.
         - td
     - 
 ```
+
 ### Tabela com colspan e rowspan
 
 ![](resources/imgs/colspan.png)
@@ -343,6 +348,7 @@ Define conteúdo e estrutura.
       </select>
     </p>
 ```
+
 ![](resources/imgs/select-multiplo.png)
 
 - Text Area

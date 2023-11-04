@@ -373,16 +373,173 @@ super(dimensao, dimensao);
 
 [FEN 7.1 Let, const, desestruturação, spread e template strings - YouTube](https://www.youtube.com/watch?v=sYvstzx7fCA)
 
+Declarações de variáveis com let e const 
+
+Podemos usar a palavra-chave let para declarar variáveis e const para declarar constantes, que não podem ser atribuídas após a inicialização. A única diferença entre var e let é que enquanto o escopo da primeira é todo o corpo da função onde foi declarada, o escopo da segunda é apenas o bloco onde foi declarada.
+Com isso, let se comporta de forma mais segura, evitando situações que podem levar a bugs no código.
+
+
+```javascript
+let a = 1;
+const b = 1;
+a = 2;
+// b = 2; // erro, não pode alterar const
+```
+
+Atribuição via desestruturação
+```javascript
+let primos = [2, 3, 5, 7, 11, 13];
+// Desestruturação de array
+let [p1, p2, ...resto] = primos;
+// Corresponde a let p1 = primos[0], p2 = primos[1]
+let curso = {nome: "Bootcamp Front End", presencial: false, turma: 1};
+// Desestruturação de objeto
+let { nome, turma, ...outrosCampos } = curso;
+// Corresponde a let nome = curso.nome, turma = curso.turma
+```
+
+Spread operator
+
+```javascript
+let primos = [2, 3, 5, 7, 11, 13];
+let primos2 = [...primos, 17];
+// Equivalente a
+// let primos2 = [2, 3, 5, 7, 11, 13, 17]
+let curso = {nome: "Bootcamp Front End", presencial: false, turma: 1};
+let curso2 = {...curso, descricao: "Bla bla"}
+// Equivalente a
+// let curso2 = {nome: "Bootcamp Front End", presencial: false, turma: 1, desc
+ricao: "Bla bla"}
+```
+
+
+Template strings ${}
+```javascript
+let a = 2, b = 3;
+let soma = a + b;
+// Template string
+console.log(`${a} + ${b} = ${soma}`);
+// Equivale a
+console.log(a + " + " + b + " = " + soma);
+```
+
+
+
 [FEN 7.2 Arrow functions - YouTube](https://www.youtube.com/watch?v=TuQlhJywj-Y)
 
 
+Arrow functions
+```javascript
+// Função convencional
+function soma(a, b) {
+    return a + b;
+}
+// Equivalente a arrow function
+const soma = (a, b) => {
+    return a + b;
+}
+// Também equivalente a
+const soma = (a, b) => a + b;
+
+```
+
+
+
 [FEN 7.3 Manipulação de arrays - YouTube](https://www.youtube.com/watch?v=3KfGPr1WGgg)
+
+Manipulação de arrays
+
+Iteração com for of
+
+
+
+```javascript
+for (let item of array) {
+    console.log(item);
+}
+```
+
+```javascript
+array.forEach((item, index) => {
+    console.log(`${index}: ${item.name}`);
+});
+```
+
+A função map transforma os elementos de um array com base em uma função
+de transformação recebida, devolvendo um novo array ao final do processo.
+
+```javascript
+// Transforma array de objetos para array de strings
+let names = usPresidents.map((item) => item.name);
+
+```
+
+A função filter filtra um array com base em uma função que é avaliada para cada elemento. Caso a função retorne true, o elemento é mantido, caso contrário o elemento é filtrado. Um novo array é devolvido ao final do processo.
+```javascript
+// Obtém apenas presidentes do partido republicano
+let republicans = usPresidents.filter((item) => item.party == "Republican");
+```
+
+A função find procura o primeiro elemento do array para o qual a função
+fornecida retorna true. O elemento encontrado é devolvido como resultado, ou null
+caso não encontre.
+
+```javascript
+// Encontra primeiro presidente do partido democrata
+let firstDemocratic = usPresidents.find((item) => item.party == "Democratic");
+```
+
+Função sort
+
+Essa função ordena um array com base em uma função de comparação estipulada. Ela deve retornar um número negativo, zero ou positivo para indicar, respectivamente, se o primeiro parâmetro é menor, igual ou maior que o segundo.
+
+```javascript
+usPresidents.sort((i1, i2) => {
+if (i1.birth_year < i2.birth_year) {
+    return -1;
+} else if (i1.birth_year > i2.birth_year) {
+    return 1;
+} else {
+    return 0;
+}
+});
+```
+
 
 
 [FEN 7.4 Módulos - YouTube](https://www.youtube.com/watch?v=TLYfeciIiWg) 
 ### Requisições HTTP em JavaScript - Parte I
 
+Módulos
+Quando uma aplicação fica muito grande, torna-se necessário modularizar, ou seja, dividir o código em diferentes arquivos. No entanto, traz ao menos duas dificuldades:
+1. Dependências entre scripts são implícitas. É necessário incluir todas as dependências de um script na página, na ordem correta.
+2. Não há encapsulamento adequado (tudo que é declarado no escopo
+global pode ser lido/escrito de qualquer script).
+Para isso, precisamos exportar as declarações no primeiro, e importá-las no segundo. Qualquer declaração não exportada torna-se privada, visível apenas dentro do arquivo.
 
+```javascript
+<script type="module" src="./modulo_b.js"></script>
+```
+modulo_a.js
+```javascript
+function fazAlgo(){
+    //...
+}
+export { fazAlgo };
+```
+
+modulo_b.js
+```javascript
+import { fazAlgo } from "./modulo_a.js";
+fazAlgo()
+```
+Feito isso, o módulo A será carregado automaticamente, pois é uma dependência de B. Além do mais, ainda que vários módulos dependam de A, ele será incluído apenas uma vez, tornando a gestão de dependências automática.
+Por fim, também podemos importar todos as declarações de um módulo por meio da sintaxe import * as ma from "./modulo_a.js". Assim, podemos usar qualquer membro exportado de A, prefixando-o com o objeto ma, por exemplo ma.fazAlgo().
+
+
+```javascript
+
+```
 
 [FEN 8.1 A API fetch - YouTube](https://www.youtube.com/watch?v=F2hhQfMBuQc)
 

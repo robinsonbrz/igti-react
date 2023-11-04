@@ -198,17 +198,109 @@ Possível utilizar o break e continue, para parar e pular uma repetição respec
 ### Interação com o DOM
 
 
-
 [FEN 5.1   Interação básica com o DOM - YouTube](https://www.youtube.com/watch?v=qsuTjigeJ9I) 
 
+Por meio de JavaScript é possível interagir com os elementos da página,
+utilizado a API conhecida como DOM (Document Object Model). O DOM nada mais é
+do que uma estrutura de dados que representa todos os elementos da página como
+objetos que podem ser acessados e modificados via JavaScript. Entre outras tarefas,
+podemos modificar o conteúdo da página e reagir a eventos.
+
+```javascript
+// obtém o elemento pelo id
+var el1 = document.getElementById("idElemento");
+// obtém o primeiro elemento capturado pelo seletor
+var el2 = document.querySelector("div.destaque");
+// obtém lista de todos os elementos capturados pelo seletor
+var elList = document.querySelectorAll("li.selecionado");
+```
+
+Adicionalmente, podemos navegar nos elementos e seus filhos a partir da raiz. Por
+exemplo, document.body.children[0] obtém o primeiro filho do elemento body.
+
+```javascript
+var el1 = document.getElementById("idElemento");
+el1.textContent = "novo texto"; // muda o conteúdo de el1
+```
+
+```javascript
+<button onclick="soma()">Calcular</button>
+```
 
 [FEN 5.2   Eventos - YouTube](https://www.youtube.com/watch?v=QboE5JIVdPk) 
+
+Além de reagir a eventos por meio do atributo onclick e outros, podemos
+registrar listeners de eventos via JavaScript.
+
+```javascript
+var el = document.getElementById("mybtn");
+// registra listener do evento click
+el.addEventListener("click", myHandler);
+// se precisar, remove o listener
+el.removeEventoListener("click", myHandler)
+```
+
+```javascript
+// registra na fase de capturing
+el.addEventListener("click", myHandler, true);
+// registra na fase de bubbling
+el.addEventListener("click", myHandler, false);
+```
+
+```javascript
+function myHandler(event) {
+console.log("clicou na posição " + event.pageX + ", " + event.pageY);
+}
+```
+
+O objeto evento também nos permite chamar as funções 
+- **stopPropagation** interrompe a propagação do evento,
+
+- **preventDefault** impede o tratamento padrão do navegador (por exemplo, seguir um link ao
+clicar no mesmo).
+
+### Tipos de eventos usados frequentemente
+| Evento | Disparo |
+|-|-|
+| focus | Elemento recebe foco. |
+| blur | Elemento perde foco. |
+| input | Valor de um elemento muda (input, select, textarea). |
+| submit | Formulário submetido. |
+| keydown | Tecla do teclado pressionada. |
+| keyup | Tecla do teclado liberada. |
+| click | Botão do mouse pressionado e liberado. |
+| mousemove | Mouse movimentado sobre o elemento. |
+
 
 
 [FEN 5.3   Criando elementos dinamicamente - YouTube](https://www.youtube.com/watch?v=m6q2IVMb0gg) 
 
+Podemos utilizar as funções document.createElement e elemento.appendChild para criar elementos dinamicamente e inseri-los no DOM.
+Também podemos inserir elementos antes de outro elemento informado usando elemento.insertBefore. Por fim, podemos remover elementos do DOM com a função elemento.remove.
+
+```javascript
+// Cria um elemento
+var myDiv = document.createElement("div");
+// Insere o elemento na página, no final do body
+document.body.appendChild(myDiv);
+// Cria outro elemento
+var myH2 = document.createElement("h2");
+myH2.textContent = "Dynamic H2";
+// Insere ele antes do div
+document.body.insertBefore(myH2, myDiv);
+// Remove da página
+myDiv.remove();
+```
+Uma outra maneira de criar elementos dinamicamente é por meio da
+propriedade innerHTML
+
+
 
 [FEN 5.4   Alterando estilos de elementos - YouTube](https://www.youtube.com/watch?v=yo05S4LDnf4) 
+
+```javascript
+
+```
 
 ### Orientação a objetos em JavaScript
 

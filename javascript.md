@@ -298,18 +298,73 @@ propriedade innerHTML
 
 [FEN 5.4   Alterando estilos de elementos - YouTube](https://www.youtube.com/watch?v=yo05S4LDnf4) 
 
-```javascript
+Podemos alterar os estilos de um elemento via propriedade style
 
+```javascript
+// Define style como string
+el.style = "color: red; margin: 4px";
+// Define propriedade individuais do style
+el.style.color = "red";
+```
+
+```javascript
+// Define className (que corresponde ao atributo class)
+el.className = "classe1 classe2";
+// Adiciona ou remove classes individualmente
+el.classList.add("classe1");
+el.classList.remove("classe1");
 ```
 
 ### Orientação a objetos em JavaScript
 
-
-
 [FEN 6.1 Instanciando objetos - YouTube](https://www.youtube.com/watch?v=2eOTY8vCVH4) 
 
+```javascript
+function Retangulo(altura, largura) {
+this.altura = altura;
+this.largura = largura;
+this.area = function () {
+return this.altura * this.largura;
+};
+}
+var r1 = new Retangulo(3, 4);
+```
+
+```javascript
+function RetanguloV2(altura, largura) {
+this.altura = altura;
+this.largura = largura;
+}
+RetanguloV2.prototype.area = function () {
+return this.altura * this.largura;
+};
+```
+
+Classes e herança
+
+```javascript
+class Retangulo {
+constructor(altura, largura) {
+this.altura = altura;
+this.largura = largura;
+}
+area() {
+return this.altura * this.largura;
+}
+}
+```
+
+```javascript
+class Quadrado extends Retangulo {
+constructor(dimensao) {
+super(dimensao, dimensao);
+}
+}
+```
 
 [FEN 6.2 Prototype chain - YouTube](https://www.youtube.com/watch?v=dfS0D3P-m5g)
+
+
 
 
 [FEN 6.3 Classes e herança - YouTube](https://www.youtube.com/watch?v=Y5f-P6KokdY) 

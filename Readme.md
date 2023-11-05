@@ -6,4 +6,6 @@ Emmet commands Cheat Sheet
 - [HTML](html.md)
 - [CSS](css.md)
 - [Javascript](javascript.md)
+- [Javascript 1](javascript1.md)
 - [jQuery](jquery.md)
+- [React](react.md)

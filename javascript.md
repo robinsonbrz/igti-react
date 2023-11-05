@@ -537,11 +537,10 @@ Feito isso, o módulo A será carregado automaticamente, pois é uma dependênci
 Por fim, também podemos importar todos as declarações de um módulo por meio da sintaxe import * as ma from "./modulo_a.js". Assim, podemos usar qualquer membro exportado de A, prefixando-o com o objeto ma, por exemplo ma.fazAlgo().
 
 
-```javascript
 
-```
 
 [FEN 8.1 A API fetch - YouTube](https://www.youtube.com/watch?v=F2hhQfMBuQc)
+
 
 
 [FEN 8.2  Dominando promises carregamento sequencial e paralelo - YouTube](https://www.youtube.com/watch?v=QzVPmWWAltg)
@@ -551,7 +550,9 @@ Por fim, também podemos importar todos as declarações de um módulo por meio 
 [FEN 8.3 Async await - YouTube](https://www.youtube.com/watch?v=SU6i_QVFNLE) 
 
 
+
 [FEN 8.4   Tratamento de erros - YouTube](https://www.youtube.com/watch?v=5Um7eN7Y434) 
+
 
 
 ### Requisições HTTP em JavaScript - Parte II
@@ -560,8 +561,34 @@ Por fim, também podemos importar todos as declarações de um módulo por meio 
 
 [FEN 8.4.1   Desafio guiado CRUD completo - YouTube](https://www.youtube.com/watch?v=DnCRizbW51U)
 
+Código base de requisições
+```javascript
+// Criar
+fetch(`http://localhost:3000/employees`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(employee),
+});
+
+// Atualizar
+fetch(`http://localhost:3000/employees/${id}`, {
+  method: "PUT",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(employee),
+});
+
+// Excluir
+fetch(`http://localhost:3000/employees/${id}`, {
+  method: "DELETE",
+});
+```
+
+
+
+
 
 [FEN 8.4.2   Desafio guiado CRUD completo parte 2 - YouTube](https://www.youtube.com/watch?v=fzFJ3KYRFpI)
+
 
 
 [FEN 8.4.3   Desafio guiado CRUD completo parte 3 - YouTube](https://www.youtube.com/watch?v=j1FNmGzjvdU)
@@ -577,6 +604,148 @@ Por fim, também podemos importar todos as declarações de um módulo por meio 
 
 [FEN 9 1   setTimeout - YouTube](https://www.youtube.com/watch?v=ShxdFG9-tbs)
 
+
+Ao utilizar campos de pesquisa Ajax.
+Cada letra que digitamos o evento on change dispara uma requisição para o backend.
+E isso pode ser um comportamento não desejado.
+Podemos inserir um delay, nessa requisição.
+Esperar a digitação de uma letra e depois de 500 ms fazer a requisição para o backend.
+Também resetar o temporizador caso uma nova letra seja digitada antes da requisição.
+
+```javascript
+input.addEventListener("input", withDelay(onQueryChange, 500));
+
+function onQueryChange() {
+  search(input.value);
+}
+
+let timeout;
+function onQueryChangeWithDelay() {
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    search(input.value);
+  }, 500);
+}
+
+function withDelay(fn, delay) {
+  let timeout;
+  return function () {
+    clearTimeout(timeout);
+    timeout = setTimeout(fn, delay);
+  };
+}
+```
+
+
+
 [FEN 9.2   setInterval - YouTube](https://www.youtube.com/watch?v=Yj-aVw8ZajA)
 
+Tarefa executada em intervalos de tempo.
+
+
+
+```javascript
+function inicia() {
+  setInterval(() => {
+    console.log("Cada 1 segundo"));
+  }, 1000);
+
+}
+inicia();
+```
+
+
+
+
+```javascript
+function inicia() {
+  relogio.textContent = formataHora(new Date());
+  interval = setInterval(() => {
+    relogio.textContent = formataHora(new Date());
+  }, 1000);
+  btn.textContent = "Para relogio";
+}
+inicia();
+```
+```javascript
+const relogio = document.getElementById("relogio");
+const btn = document.getElementById("btn");
+let interval;
+
+function inicia() {
+  relogio.textContent = formataHora(new Date());
+  interval = setInterval(() => {
+    relogio.textContent = formataHora(new Date());
+  }, 1000);
+  btn.textContent = "Para relogio";
+}
+inicia();
+
+function para() {
+  clearInterval(interval);
+  interval = undefined;
+  btn.textContent = "Inicia relogio";g
+}
+
+function iniciaOuPara() {
+  if (interval) {
+    para();
+  } else {
+    inicia();
+  }
+}
+
+function formataHora(date) {
+  const h = date.getHours().toString().padStart(2, "0"),
+    m = date.getMinutes().toString().padStart(2, "0"),
+    s = date.getSeconds().toString().padStart(2, "0");
+  return `${h}:${m}:${s}`;
+}
+
+```
+
+
+
 [FEN 9.3   requestAnimationFrame - YouTube](https://www.youtube.com/watch?v=JbRHGtaVs1I)
+
+
+Geralemente em animações.
+Executa no próximo frame do navegador.
+Reagendando próximas renderizações para próximos frames.
+
+Utiliznado o <canvas>
+
+```javascript
+const cv = document.getElementById("cv");
+const ctx = cv.getContext("2d");
+
+const pos = [50, 50];
+const speed = [200, 60];
+const size = 300;
+let lastTime;
+
+function draw(time) {
+  if (!lastTime) {
+    lastTime = time;
+  }
+  const ellapsedTimeS = (time - lastTime) / 1000;
+  lastTime = time;
+  //console.log(ellapsedTime);
+
+  ctx.fillStyle = "rgb(0, 80, 120)";
+  ctx.clearRect(0, 0, 300, 300);
+  
+  ctx.beginPath();
+  pos[0] += ellapsedTimeS * speed[0];
+  pos[1] += ellapsedTimeS * speed[1];
+  pos[0] = pos[0] >= size ? pos[0] % size : pos[0];
+  pos[1] = pos[1] >= size ? pos[1] % size : pos[1];
+  ctx.arc(pos[0], pos[1], 20, 0, 2 * Math.PI, true);
+  ctx.fill();
+
+  requestAnimationFrame(draw);
+}
+
+requestAnimationFrame(draw);
+
+```

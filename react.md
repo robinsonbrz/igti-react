@@ -48,14 +48,41 @@ Prof. Raphael Gomide
 - Instalação de algumas bibliotecas úteis, como o rimraf e o serve.
 - Instalação e configuração do VSCode Portable.
 - Criação de um projeto React com a biblioteca create-react-app.
-- Utilização de um projeto base, fornecido pelo professor.
-- Projeto “limpo” e com integração ao Tailwind CSS.
-- Sugestão de extensões.
+    ```bash
+    npx create-react-app ambiente
+    ```
+
 
 
 
 
 [Aula 1.3 Instalação do VSCode e create-react-app]()
+
+```bash
+npx create-react-app ambiente
+cd ambiente
+npm start
+```
+
+
+```bash
+Compiled successfully!
+
+You can now view ambiente in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.0.127:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+```
+
+- Utilização de um projeto base, fornecido pelo professor.
+- Projeto “limpo” e com integração ao Tailwind CSS.
+- Sugestão de extensões.
+
 [Aula 1.4 Estudo de um app criado com o create-react-app]()
 [Aula 1.5 Estudo de um app criado com o projeto-base]()
 

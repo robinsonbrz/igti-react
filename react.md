@@ -364,8 +364,15 @@ Roteiro - react-hello
 
 [Aula 2.4 react-hello – Componentização](https://youtu.be/wqWWON1ms4s?list=PLbENDFQw0TC7wPQO5JiUmqxEf_CPjy-d2)
 
+Pasta src/components
+Header.js
+Componentes iniciam com letra maiúscula
+
+
 
 [Aula 2.5 react-hello – Entendendo as props](https://youtu.be/iR9YcdSCRwE?list=PLbENDFQw0TC7wPQO5JiUmqxEf_CPjy-d2)
+
+
 
 
 [Aula 2.6 react-hello – Estado com useState](https://youtu.be/UNuhav9xP1g)

@@ -1,25 +1,25 @@
+import Header from "./components/Header";
+import Main from "./components/Main";
+
 export default function App() {
-  console.log('Teste no console do navegador')
+  console.log('Teste no console do navegador');
 
   const name = 'Robinson';
 
   return (
-    <div>
-      <header>
-        <div className="bg-green-300 mx-auto p-4">
-          <h1 className="text-center font-semibold text-xl">
-            React Hello
-          </h1>
-        </div>
-      </header>
+    <>
+      <Header size="large">Componente Header - projeto react-hello large</Header>
+      <Header >Componente Header - projeto react-hello normal</Header>
+      <Main>
 
-      <main>
-        <div className="container mx-auto p-4">
-          <p>
-            Olá {name}! Quantidade de caracteres em nome {name.length} 
-          </p>
-        </div>
-      </main>
-    </div>
-  )
-}
+          <div className="container mx-auto p-4">
+            <p>
+              Olá Robinson! Quantidade de caracteres em nome 8 
+            </p>
+          </div>
+
+      </Main>
+
+    </>
+  );
+};

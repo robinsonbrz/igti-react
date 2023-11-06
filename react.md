@@ -56,7 +56,7 @@ Prof. Raphael Gomide
 
 
 
-[Aula 1.3 Instalação do VSCode e create-react-app]()
+[Aula 1.3 Instalação do VSCode e create-react-app](https://youtu.be/9_5_jq8hy60?list=PLbENDFQw0TC7wPQO5JiUmqxEf_CPjy-d2)
 
 ```bash
 npx create-react-app ambiente
@@ -79,27 +79,319 @@ To create a production build, use npm run build.
 webpack compiled successfully
 ```
 
+
+
+[Aula 1.4 Estudo de um app criado com o create-react-app](https://youtu.be/eDm9ci3NhyQ?list=PLbENDFQw0TC7wPQO5JiUmqxEf_CPjy-d2)
+
+Em ambiente/src apagar:
+    - app.css
+    - app.test.js
+    - index.css
+    - logo.svg
+    - reportWebVitals.js
+    - setupTests.js
+
 - Utilização de um projeto base, fornecido pelo professor.
 - Projeto “limpo” e com integração ao Tailwind CSS.
 - Sugestão de extensões.
 
-[Aula 1.4 Estudo de um app criado com o create-react-app]()
-[Aula 1.5 Estudo de um app criado com o projeto-base]()
+
+
+
+[Aula 1.5 Estudo de um app criado com o projeto-base](https://youtu.be/Ri7Jvmy89g8?list=PLbENDFQw0TC7wPQO5JiUmqxEf_CPjy-d2)
+
+
+Package.json configurado para utilizar
+Node modules é onde são instaladas as dependências
+yarn lê as dependências
+É mais rápido rebuildar o projeto do que copiar a pasta buildada de um projeto
+
+
+```bash
+yarn dev
+```
+
 
 Capítulo 2. Introdução ao React
-[Aula 2.1 – Introdução ao React]()
+[Aula 2.1 – Introdução ao React](mod02/proj-base-1.5/.env.example)
+
+Javascript library for building user interfaces
+
+- Declarativo (mais explicito)
+    - Componentes reativos
+    - Mais foco no estado do app e regras de negócio
+    - Menos foco em manipulação do DOM
+    - Manipulação do DOM performática (Virtual DOM)
+- Baseado em componentes
+    - alto grau de reutilização de código
+
+Virtual DOM
+- Manipulação performática do DOM.
+-  A manipulação manual do DOM é considerada uma
+operação cara (lenta).
+- O React só modifica o DOM nos locais que foram
+realmente alterados.
+- Esse processo é mais conhecido como
+Reconciliation.
+
+
+Termos importantes
+
+- Componente:
+    - Função que agrupa determinado comportamento.
+    - Em regra, realiza processamento e retorna dados renderizados (HTML + CSS).
+    - Se bem escritos, podem ser reaproveitados.
+    - Uma aplicação React é geralmente composta por diversos componentes.
+- JSX:
+    - JavaScript XML.
+    - Utilizada pelo React para a escrita da renderização de componentes.
+- Sintaxe de importação e exportação:
+    - Palavras-chave import e export.
+    - Faz parte do JavaScript Moderno (ES6+).
+    - Utilizadas para definirmos o que utilizar (import) e o que fornecer (export) durante a
+    - escrita do código-fonte.
+- props:
+    - Propriedades de componentes. Consideradas “somente leitura”.
+    - Semelhante aos atributos de tags HTML.
+    - Existe uma prop especial – children.
+    - Utilizados para o envio e recebimento de dados entre componentes.
+
+- Closure:
+    - Função implementada dentro do escopo de outra função.
+    - Permite o acesso ao escopo externo.
+    - Muito utilizado pelo React na criação de componentes, através da criação de funções para lidar com ocorrência de eventos (cliques, digitação, etc.).
+
+- State:
+    - Representa o estado de componentes.
+    - Estado: dado que pode ser modificado com o tempo.
+    - Exemplos: dados de formulários, Back End, etc.
+
+
+
+- Hooks:
+    - Estrutura do React que pode ser vinculada (hooked) a componentes.
+    - Internamente, são implementadas como funções.
+    - Atuam diretamente na reatividade do React.
+    - Convenção: começar com o prefixo “use”.
+    - Principais hooks: useState e useEffect.
+    - É possível criar nossos próprios hooks.
+
+- useState:
+    - oHook para lidar com estado.
+    - oDevolve um valor e função modificadora (setter).
+    - oSempre que o setter é invocado, uma nova renderização do componente é agendada e pode ocorrer a qualquer momento.
+    - Isso é feito de forma assíncrona.
+
+useEffect:
+    - Hook para lidar com “efeitos colaterais” (side effects).
+    - Palavra-chave: sincronização.
+    - Estado do app x estado do mundo.
+    - Permite, por exemplo:
+    - Manipular o DOM manualmente.
+    - Monitorar eventos do navegador.
+    - Trabalhar com o Back End.
+
+
+[Sandbox sample](https://codesandbox.io/s/react-counter-rrgomide-jzo7n?file=/src/App.js)
+
+Código com os termos comentados anteriormente
+```javascript
+// Importação do hook useState
+import { useEffect, useState } from "react";
+
+/**
+ * Declaração do componente
+ * O export indica que ele
+ * poderá ser utilizado externamente
+ */
+export default function App() {
+  // CSS in JS
+  const { containerStyle } = styles;
+
+  // Exemplo de utilização de useEffect
+  useEffect(() => {
+    document.title = "react-counter";
+  }, []);
+
+  // JSX
+  return (
+    <div style={containerStyle}>
+      <h1>react-counter</h1>
+
+      {/* Utilização de outro componente */}
+      <Counter />
+    </div>
+  );
+}
+
+// Outro componente
+function Counter() {
+  // Exemplo de utilização de useState
+  const [count, setCount] = useState(0);
+
+  // Closure
+  function handleDecrement() {
+    setCount((currentCount) => currentCount - 1);
+  }
+
+  // Closure
+  function handleIncrement() {
+    setCount(count + 1);
+  }
+
+  // JSX com props
+  return (
+    <div>
+      <button onClick={handleDecrement}>-</button>
+      <input type="text" value={count} readOnly />
+      <button onClick={handleIncrement}>+</button>
+    </div>
+  );
+}
+
+const styles = {
+  containerStyle: {
+    backgroundColor: "lightgray",
+    padding: "10px",
+    fontFamily: "Arial, sans-serif"
+  }
+};
+```
+
+
+
 [Aula 2.2 react-hello – Instalação do React Developer Tools e introdução ao JSX]()
+
+```
+Roteiro - react-hello
+=====================
+
+(x) Obter projeto-base, renomear pasta para "react-hello" e
+   instalar dependências com o comando "yarn"
+
+(x) Repassar rapidamente o projeto "react-hello" inicial
+   (cópia do "projeto-base")
+
+(x) Utilizar .env
+
+(x) Abrir projeto com "yarn dev"
+
+(x) Instalar "React Developer Tools" no Google Chrome
+
+() App.js
+   (x) Falar sobre JSX
+   (x) Falar de class x className e for x htmlFor
+   (x) Falar sobre abertura e fechamento de tags
+   (x) Trocar título para react-hello em App.js e index.html 
+   (x) Remover conteúdo atual de <main>
+   (x) Incluir, em <main>, um parágrafo para renderizar 
+      nome + idade
+   (x) Mostrar como interpolar dados no JSX através 
+      da sintaxe de chaves { }
+
+   (x) Componentizar <Header> e <Main>, explicando o  
+      conceito de "props"
+      (x) Criar Header "na mão"
+      (x) Criar Main com o apoio do snippet "_rfc"
+
+	  (x) Criar props com string, boolean, number,
+	     array, object e função (evento)
+
+   (x) Falar sobre a necessidade de interação do usuário.
+      No React, isso pode ser feito com a utilização 
+      de estado (state) e o hook useState
+
+   (x) Criar, em <main>, um input de texto 
+
+   (x) Tentar, de alguma forma, manipular o valor do 
+      input e refletí-lo no parágrafo
+
+   (x) Explicar o conceito de state em React
+   (x) Criar state para "name" com o Hook useState
+   (x) Fazer com que o input leia e altere "name" 
+
+   (x) Componentizar o input de name
+   
+   (x) Criar input do tipo "date" e persistir 
+      estado para "birthDate"
+
+      (x) Criar função para calcular idade a partir 
+         da data de nascimento
+		 
+      (x) Verificar que o input do tipo date 
+         trabalha com strings no formato yyyy-mm-dd 
+
+      (x) Verificar que o input permite datas inválidas (ex: 30/02). 
+         Controlar isso, inserindo o texto '?' para a idade
+
+   (x) Refatorar componentes de input para utilizar a prop
+      id e autoFocus corretamente
+
+   (x) Explicar o conceito de "efeito colateral" (side effect)
+
+   (x) Criar useEffect para incluir o nome digitado no título da aba
+   
+      (x) Mostrar effect sem deps e enfatizar que ele vai ser 
+         executado "além do necessário" com a troca de state 
+         do input de data 
+
+      (x) Mostrar effect com deps === [] e enfatizar que ele vai executar 
+         somente uma vez, o que não é o caso 
+
+      (x) Mostrar effect com deps === [name] e enfatizar que é o ideal 
+         neste caso
+
+  (x) Criar componente <Timer /> para ser exibido/removido com 
+     checkbox. Demonstrar exigência da limpeza do intervalo 
+     com o retorno da função de useEffect
+		 
+  (x) Revisar componentes com o React Developer Tools
+
+  (x) Criar useEffect para indicar que o app está online/offline
+
+  (x) Limpar o app para disponibilização, removendo arquivos "desnecessários",
+     como por exemplo a pasta "node_modules". Use a biblioteca rimraf para isso.
+```
+
+
+
+
+
 [Aula 2.3 react-hello – JSX, interpolação e introdução ao Tailwind CSS]()
+
+
+
+
 [Aula 2.4 react-hello – Componentização]()
+
+
 [Aula 2.5 react-hello – Entendendo as props]()
+
+
 [Aula 2.6 react-hello – Estado com useState]()
+
+
 [Aula 2.7 react-hello – Componentização de < input >s e trabalhando com eventos]()
+
+
 [Aula 2.8 react-hello – Cálculo de idade a partir da data de nascimento]()
+
+
 [Aula 2.9 react-hello – Refatoração dos componentes de < input >]()
+
+
 [Aula 2.10 react-hello – Introdução ao useEffect]()
+
+
 [Aula 2.11 react-hello – Criação do componente <Timer />]()
+
+
 [Aula 2.12 react-hello – Utilizando useEffect com cleanup function]()
+
+
 [Aula 2.13 react-hello – Indicador de app online/offline]()
+
+
 
 Capítulo 3 – Criando componentes mais robustos
 [Aula 3.1 – React – Entendendo a prop key, prop drilling e Composition]()

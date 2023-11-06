@@ -1,19 +1,23 @@
 export default function App() {
   console.log('Teste no console do navegador')
 
+  const name = 'Robinson';
+
   return (
     <div>
       <header>
-        <div className="bg-gray-100 mx-auto p-4">
+        <div className="bg-green-300 mx-auto p-4">
           <h1 className="text-center font-semibold text-xl">
-            Projeto base para o Módulo React I
+            React Hello
           </h1>
         </div>
       </header>
 
       <main>
         <div className="container mx-auto p-4">
-          <h2>O conteúdo fica aqui.</h2>
+          <p>
+            Olá {name}! Quantidade de caracteres em nome {name.length} 
+          </p>
         </div>
       </main>
     </div>

@@ -260,7 +260,7 @@ const styles = {
 
 
 
-[Aula 2.2 react-hello – Instalação do React Developer Tools e introdução ao JSX]()
+[Aula 2.2 react-hello – Instalação do React Developer Tools e introdução ao JSX](https://youtu.be/ea30YQXMo9Q?list=PLbENDFQw0TC7wPQO5JiUmqxEf_CPjy-d2)
 
 ```
 Roteiro - react-hello
@@ -357,21 +357,21 @@ Roteiro - react-hello
 
 
 
-[Aula 2.3 react-hello – JSX, interpolação e introdução ao Tailwind CSS]()
+[Aula 2.3 react-hello – JSX, interpolação e introdução ao Tailwind CSS](https://youtu.be/Ckyt-g83kwk?list=PLbENDFQw0TC7wPQO5JiUmqxEf_CPjy-d2)
 
 
 
 
-[Aula 2.4 react-hello – Componentização]()
+[Aula 2.4 react-hello – Componentização](https://youtu.be/wqWWON1ms4s?list=PLbENDFQw0TC7wPQO5JiUmqxEf_CPjy-d2)
 
 
-[Aula 2.5 react-hello – Entendendo as props]()
+[Aula 2.5 react-hello – Entendendo as props](https://youtu.be/iR9YcdSCRwE?list=PLbENDFQw0TC7wPQO5JiUmqxEf_CPjy-d2)
 
 
-[Aula 2.6 react-hello – Estado com useState]()
+[Aula 2.6 react-hello – Estado com useState](https://youtu.be/UNuhav9xP1g)
 
 
-[Aula 2.7 react-hello – Componentização de < input >s e trabalhando com eventos]()
+[Aula 2.7 react-hello – Componentização de < input >s e trabalhando com eventos](https://youtu.be/gfrMaKfcMic)
 
 
 [Aula 2.8 react-hello – Cálculo de idade a partir da data de nascimento]()

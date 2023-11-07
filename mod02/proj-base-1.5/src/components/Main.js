@@ -1,6 +1,6 @@
 export default function Main({children}) {
   return (
-  <main>
+  <main  className="container mx-auto p-4">
     {children}
   </main>
   )

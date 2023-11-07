@@ -372,7 +372,8 @@ Componentes iniciam com letra maiúscula
 
 [Aula 2.5 react-hello – Entendendo as props](https://youtu.be/iR9YcdSCRwE?list=PLbENDFQw0TC7wPQO5JiUmqxEf_CPjy-d2)
 
-
+<div> ocupa espaço na memória
+<fragment> não ocupa espaço
 
 
 [Aula 2.6 react-hello – Estado com useState](https://youtu.be/UNuhav9xP1g)

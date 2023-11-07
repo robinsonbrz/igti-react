@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import TextInput from "./components/TextInput";
 
 
 export default function App() {
@@ -9,29 +10,19 @@ export default function App() {
   // const setName = state[1];
   // console.log(state);
   const [name, setName] = useState('Robinson');
-  function handleNameChange(event) {
-    const newName = event.currentTarget.value;
+
+  function handleNameChange(newName) {
     setName(newName);
   }
 
   return (
     <>
-      <Header size="large">Componente Header - projeto react-hello large</Header>
-      <Header >Componente Header - projeto react-hello normal</Header>
+      <Header size="large">Componente Header - projeto react-hello</Header>
       <Main>
-        <div className="flex flex-col my-4">
-
-          <label className="text-sm mb-1" htmlFor="inputName">Digite o seu nome:</label>
-          <input 
-            autoFocus 
-            id="inputName" 
-            className="border p-1" 
-            type="text"
-            value={name}
-            onChange={handleNameChange}
-          />
-        </div>
-
+          <TextInput 
+            labelDescription="Digite o seu nome: "
+            inputValue={name}
+            onInputChange={handleNameChange}  />
         <p>
           Olá { name }! Quantidade de caracteres em nome {name.length}
         </p>

@@ -378,6 +378,7 @@ Componentes iniciam com letra maiúscula
 
 [Aula 2.6 react-hello – Estado com useState](https://youtu.be/UNuhav9xP1g)
 
+Uma função dentro da outra closure
 
 [Aula 2.7 react-hello – Componentização de < input >s e trabalhando com eventos](https://youtu.be/gfrMaKfcMic)
 

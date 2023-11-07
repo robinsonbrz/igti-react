@@ -1,19 +1,39 @@
+import { useState } from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
 
 
 export default function App() {
-  console.log('Teste no console do navegador');
-
+  // const state = useState('Robinson');
+  // const name = state[0];
+  // const setName = state[1];
+  // console.log(state);
+  const [name, setName] = useState('Robinson');
+  function handleNameChange(event) {
+    const newName = event.currentTarget.value;
+    setName(newName);
+  }
 
   return (
     <>
       <Header size="large">Componente Header - projeto react-hello large</Header>
       <Header >Componente Header - projeto react-hello normal</Header>
       <Main>
-        <input className="border" type="text" />
+        <div className="flex flex-col my-4">
+
+          <label className="text-sm mb-1" htmlFor="inputName">Digite o seu nome:</label>
+          <input 
+            autoFocus 
+            id="inputName" 
+            className="border p-1" 
+            type="text"
+            value={name}
+            onChange={handleNameChange}
+          />
+        </div>
+
         <p>
-          Olá Robinson! Quantidade de caracteres em nome 8 
+          Olá { name }! Quantidade de caracteres em nome {name.length}
         </p>
       </Main>
     </>

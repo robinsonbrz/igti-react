@@ -405,10 +405,10 @@ Uma função dentro da outra closure
 
 
 Capítulo 3 – Criando componentes mais robustos
-[Aula 3.1 – React – Entendendo a prop key, prop drilling e Composition]()
-[Aula 3.2 – react-countries – Organização do projeto]()
-[Aula 3.3 – react-countries – Implementação do input de filtro de países]()
-[Aula 3.4 – react-countries – Filtragem de países]()
+[Aula 3.1 – React – Entendendo a prop key, prop drilling e Composition](https://youtu.be/eaKCLUQmZzI)
+[Aula 3.2 – react-countries – Organização do projeto](https://youtu.be/SjemvcYA_lg)
+[Aula 3.3 – react-countries – Implementação do input de filtro de países](https://youtu.be/KHPJ7EoDF0Q)
+[Aula 3.4 – react-countries – Filtragem de países](https://youtu.be/Ob6g6WhOync)
 [Aula 3.5 – react-countries – Renderizando múltiplos componentes e a prop "key"](https://youtu.be/APz8UFCiywg)
 [Aula 3.6 – react-countries – Estilização dos países](https://youtu.be/A_20RnPUwPk)
 [Aula 3.7 – react-countries – Implementação de países visitados](https://youtu.be/Ry4wIQvzzDw)

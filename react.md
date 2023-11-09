@@ -383,7 +383,9 @@ Uma função dentro da outra closure
 [Aula 2.7 react-hello – Componentização de < input >s e trabalhando com eventos](https://youtu.be/gfrMaKfcMic)
 
 
-[Aula 2.8 react-hello – Cálculo de idade a partir da data de nascimento]()
+[Aula 2.8 react-hello – Cálculo de idade a partir da data de nascimento](https://www.youtube.com/watch?v=vX_lV9eGA14)
+
+
 
 
 [Aula 2.9 react-hello – Refatoração dos componentes de < input >]()

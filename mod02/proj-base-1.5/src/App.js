@@ -6,10 +6,13 @@ import DateInput from "./components/DateInput";
 
 
 export default function App() {
-  // const state = useState('Robinson');
-  // const name = state[0];
-  // const setName = state[1];
-  // console.log(state);
+  /**
+   * Renders a React component that displays a header, a main section, and two input components.
+   * Manages the state of the name and birthDate variables using the useState hook.
+   * Defines event handler functions to update the state variables when the input values change.
+   * 
+   * @returns {JSX.Element} The rendered React component.
+   */
   const [name, setName] = useState('Robinson');
   const [birthDate, setBirthDate] = useState('1974-10-03');
 
@@ -29,8 +32,8 @@ export default function App() {
           labelDescription="Digite o seu nome: "
           inputValue={name}
           onInputChange={handleNameChange}
-          />
-          
+        />
+        
         <DateInput 
           labelDescription="Digite a sua data de nascimento: "
           inputValue={birthDate}
@@ -42,7 +45,7 @@ export default function App() {
       </Main>
     </>
   );
-};
+}
 
 // exemplo de utilização de props
 

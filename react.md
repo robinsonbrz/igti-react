@@ -388,19 +388,19 @@ Uma função dentro da outra closure
 
 
 
-[Aula 2.9 react-hello – Refatoração dos componentes de < input >]()
+[Aula 2.9 react-hello – Refatoração dos componentes de < input >](https://youtu.be/O_9sRSDJyNk)
 
 
-[Aula 2.10 react-hello – Introdução ao useEffect]()
+[Aula 2.10 react-hello – Introdução ao useEffect](https://youtu.be/ovs-Fq5mOUA)
 
 
-[Aula 2.11 react-hello – Criação do componente <Timer />]()
+[Aula 2.11 react-hello – Criação do componente <Timer />](https://youtu.be/HbsYM5u12Mk)
 
 
-[Aula 2.12 react-hello – Utilizando useEffect com cleanup function]()
+[Aula 2.12 react-hello – Utilizando useEffect com cleanup function](https://youtu.be/Oy7bJfIsQqg)
 
 
-[Aula 2.13 react-hello – Indicador de app online/offline]()
+[Aula 2.13 react-hello – Indicador de app online/offline](https://youtu.be/KYKcxckB9Fs)
 
 
 

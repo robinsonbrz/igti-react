@@ -1,5 +1,9 @@
+import { getBackend } from "./api/api"
+
+const backend = getBackend()
 export default function App() {
   console.log('Teste no console do navegador')
+  // console.log('backend: ', backend)
 
   return (
     <div>
@@ -12,6 +16,7 @@ export default function App() {
       </header>
 
       <main>
+        <pre>{JSON.stringify(backend, null, 2)}</pre>
         <div className="container mx-auto p-4">
           <h2>O conteúdo fica aqui.</h2>
         </div>

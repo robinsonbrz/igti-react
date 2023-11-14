@@ -6,7 +6,7 @@ export default function App() {
       <header>
         <div className="bg-gray-100 mx-auto p-4">
           <h1 className="text-center font-semibold text-xl">
-            Projeto base para o Módulo React I
+            Projeto base para o Desafio 02 módulo 02
           </h1>
         </div>
       </header>

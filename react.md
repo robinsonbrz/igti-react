@@ -419,13 +419,13 @@ Trabalho Prático do Módulo 2
 Primeira Aula Interativa
 
 Capítulo 4 – O projeto react-flash-cards-v1
-[Aula 4.1 – React – Entendendo a técnica "lifting state up"]()
-[Aula 4.2 – react-flash-cards-v1 – Organização do projeto]()
-[Aula 4.3 – react-flash-cards-v1 – Criação do componente <FlashCard />]()
-[Aula 4.4 – react-flash-cards-v1 – Renderizando vários "FlashCards"]()
-[Aula 4.5 – react-flash-cards-v1 – Implementação de Radio Buttons – parte 1]()
-[Aula 4.6 – react-flash-cards-v1 – Implementação de Radio Buttons – parte 2]()
-[Aula 4.7 – react-flash-cards-v1 – Aplicando a técnica "lifting state up" ]()
+[Aula 4.1 – React – Entendendo a técnica "lifting state up"](https://youtu.be/wxWeM7-Xr9s)
+[Aula 4.2 – react-flash-cards-v1 – Organização do projeto](https://youtu.be/JP0Xc3ZuSXo)
+[Aula 4.3 – react-flash-cards-v1 – Criação do componente <FlashCard />](https://youtu.be/Dd-gyjY_ETI)
+[Aula 4.4 – react-flash-cards-v1 – Renderizando vários "FlashCards"](https://youtu.be/SUyAnbA2UzQ)
+[Aula 4.5 – react-flash-cards-v1 – Implementação de Radio Buttons – parte 1](https://youtu.be/W-NAGaKVvmE)
+[Aula 4.6 – react-flash-cards-v1 – Implementação de Radio Buttons – parte 2](https://youtu.be/JzcfKKOE1RI)
+[Aula 4.7 – react-flash-cards-v1 – Aplicando a técnica "lifting state up" ](https://youtu.be/ov_uHXW0rI0)
 
 Capítulo 5 – O projeto react-flash-cards-v2
 [Aula 5.1 – Introdução ]()

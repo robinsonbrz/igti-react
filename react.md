@@ -436,10 +436,10 @@ Capítulo 5 – O projeto react-flash-cards-v2
 [Aula 5.6 – react-flash-cards-v2 – Utilização da biblioteca react-tabs](https://youtu.be/2WA7-o7Rm6U)
 [Aula 5.7 – react-flash-cards-v2 – Utilização de formulários – parte 1](https://youtu.be/Jk_rjhPIDwM)
 [Aula 5.8 – react-flash-cards-v2 – Utilização de formulários – parte 2](https://youtu.be/pklQ6VMaDe0)
-[Aula 5.9 – react-flash-cards-v2 – Utilização de formulários – parte 3]()
-[Aula 5.10 – react-flash-cards-v2 – Utilização de formulários – parte 4]()
-[Aula 5.11 – react-flash-cards-v2 – Finalização do CRUD – parte 1]()
-[Aula 5.12 – react-flash-cards-v2 – Finalização do CRUD – parte 2]()
+[Aula 5.9 – react-flash-cards-v2 – Utilização de formulários – parte 3](https://youtu.be/Kw9P2popzII)
+[Aula 5.10 – react-flash-cards-v2 – Utilização de formulários – parte 4](https://youtu.be/fYXvDyI3F1Q)
+[Aula 5.11 – react-flash-cards-v2 – Finalização do CRUD – parte 1](https://youtu.be/jrBWR_LKYaQ)
+[Aula 5.12 – react-flash-cards-v2 – Finalização do CRUD – parte 2](https://youtu.be/hdnZ49s69sM)
 
 Capítulo 6 – O projeto react-flash-cards-v3
 [Aula 6.1 – Introdução]()

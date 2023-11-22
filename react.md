@@ -442,10 +442,10 @@ Capítulo 5 – O projeto react-flash-cards-v2
 [Aula 5.12 – react-flash-cards-v2 – Finalização do CRUD – parte 2](https://youtu.be/hdnZ49s69sM)
 
 Capítulo 6 – O projeto react-flash-cards-v3
-[Aula 6.1 – Introdução]()
-[Aula 6.2 – Criação do Back End com o glitch.com]()
-[Aula 6.3 – Implantação do Front End no Netlify]()
-[Aula 6.4 – Implementação da biblioteca react-toastify]()
+[Aula 6.1 – Introdução](https://youtu.be/9WGbetFiYes)
+[Aula 6.2 – Criação do Back End com o glitch.com](https://youtu.be/8HMEf8JWhyE)
+[Aula 6.3 – Implantação do Front End no Netlify](https://youtu.be/vShasOfcmqg)
+[Aula 6.4 – Implementação da biblioteca react-toastify](https://youtu.be/c3wOKGRA2xw)
 
 Desafio do Módulo 2
 

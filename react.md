@@ -462,9 +462,9 @@ React II
 
  
 
-Capítulo 1 - Introdução  https://youtu.be/2f3LStybIYw
+Capítulo 1 - Introdução 
 
-1.1. Visão geral do módulo 
+1.1. Visão geral do módulo  https://youtu.be/2f3LStybIYw
 
  
 
@@ -480,25 +480,25 @@ Capítulo 2 - TypeScript
 
 Capítulo 3 – Interface com Material-UI 
 
-3.1. Material-UI 
+3.1. Material-UI https://youtu.be/6ZRUg7G1mPk
 
-3.2. Construindo a interface (parte 1) 
+3.2. Construindo a interface (parte 1) https://youtu.be/n8z7UUcKXN8
 
-3.3. Construindo a interface (parte 2) 
+3.3. Construindo a interface (parte 2) https://youtu.be/VoMfDXJTV58
 
-3.4. Construindo a interface (parte 3) 
+3.4. Construindo a interface (parte 3) https://youtu.be/kzKw8ipt83g
 
  
 
 Capítulo 4 - Adicionando estado e comportamento 
 
-4.1. Gerando o calendário dinamicamente 
+4.1. Gerando o calendário dinamicamente https://youtu.be/1sSR95CSwIc
 
-4.2. Carregando eventos do Back End 
+4.2. Carregando eventos do Back End https://youtu.be/yr9KrcqfMXc
 
-4.3. Carregando agendas do Back End 
+4.3. Carregando agendas do Back End https://youtu.be/liEgRp9EYgU
 
-4.4. Ocultar e exibir agendas 
+4.4. Ocultar e exibir agendas https://youtu.be/5OBZH7fyPCI
 
  
 

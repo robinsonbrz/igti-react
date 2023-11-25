@@ -504,11 +504,11 @@ Capítulo 4 - Adicionando estado e comportamento
 
 Capítulo 5 - Roteamento com react-router 
 
-5.1. Introdução ao react-router 
+5.1. Introdução ao react-router https://youtu.be/QpEdFFvYt7A
 
-5.2. Adicionando roteamento (parte 1) 
+5.2. Adicionando roteamento (parte 1) https://youtu.be/YCwz-4o8_pU
 
-5.3. Adicionando roteamento (parte 2) 
+5.3. Adicionando roteamento (parte 2) https://youtu.be/MwY6mpX-P-Y
 
  
 

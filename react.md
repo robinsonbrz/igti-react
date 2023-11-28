@@ -514,9 +514,9 @@ Capítulo 5 - Roteamento com react-router
 
 Capítulo 6 - Modularizando a aplicação 
 
-6.1. Modularizando a aplicação (parte 1) 
+6.1. Modularizando a aplicação (parte 1) https://youtu.be/vHNvc76U-os
 
-6.2. Modularizando a aplicação (parte 2) 
+6.2. Modularizando a aplicação (parte 2) https://youtu.be/Pmj-HfIPP0E
 
  
 

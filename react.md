@@ -522,19 +522,19 @@ Capítulo 6 - Modularizando a aplicação
 
 Capítulo 7 - Acesso direto ao DOM com useRef 
 
-7.1. Hook useRef 
+7.1. Hook useRef https://youtu.be/wvZQichHbs0
 
-7.2. Implementando o formulário de criar evento (parte 1) 
+7.2. Implementando o formulário de criar evento (parte 1) https://youtu.be/Z8Wu07CsT7c
 
-7.3. Implementando o formulário de criar evento (parte 2) 
+7.3. Implementando o formulário de criar evento (parte 2) https://youtu.be/eDLtrC13lpU
 
-7.4. Implementando o formulário de criar evento (parte 3) 
+7.4. Implementando o formulário de criar evento (parte 3) https://youtu.be/zOB_ev_wLN0
 
-7.5. Salvar dados no Back End 
+7.5. Salvar dados no Back End https://youtu.be/gQkXlza5olQ
 
-7.6. Validar formulário 
+7.6. Validar formulário https://youtu.be/-i8smlkm6p8
 
-7.7. Editar eventos 
+7.7. Editar eventos https://youtu.be/PvxNheJ6DlA
 
  
 

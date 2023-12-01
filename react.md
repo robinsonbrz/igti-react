@@ -546,13 +546,13 @@ Trabalho Prático
 
 Capítulo 8 - Autenticação 
 
-8.1. Lidando com autenticação 
+8.1. Lidando com autenticação https://youtu.be/124vR6CvX7k
 
-8.2. Criando a tela de login 
+8.2. Criando a tela de login https://youtu.be/7PSueOXG55Q
 
-8.3. Criando sessão no Back End 
+8.3. Criando sessão no Back End https://youtu.be/64e8uV4HxGo
 
-8.4. Adicionando logout 
+8.4. Adicionando logout https://youtu.be/q4W-nFaA0KE
 
  
 

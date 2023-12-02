@@ -558,9 +558,9 @@ Capítulo 8 - Autenticação
 
 Capítulo 9 - A API Context 
 
-9.1. A API Context (parte 1) 
+9.1. A API Context (parte 1) https://youtu.be/rmTLG5tGS1E
 
-9.2. A API Context (parte 2) 
+9.2. A API Context (parte 2) https://youtu.be/KGAGQ1Pc07w
 
  
 

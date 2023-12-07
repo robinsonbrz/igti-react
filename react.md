@@ -574,11 +574,11 @@ Capítulo 10 - Otimização de aplicações
 
 Capítulo 11 - useReducer 
 
-11.1. Usando useReducer (parte 1) 
+11.1. Usando useReducer (parte 1) https://youtu.be/BVAajMU4_rQ
 
-11.2. Usando useReducer (parte 2) 
+11.2. Usando useReducer (parte 2) https://youtu.be/NGzFr-q6vi0
 
-11.3. Usando useReducer (parte 3) 
+11.3. Usando useReducer (parte 3) https://youtu.be/PEEvtFnKlQQ
 
  
 

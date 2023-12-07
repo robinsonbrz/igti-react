@@ -566,9 +566,9 @@ Capítulo 9 - A API Context
 
 Capítulo 10 - Otimização de aplicações 
 
-10.1. useMemo, useCallback e React.memo (parte 1) 
+10.1. useMemo, useCallback e React.memo (parte 1) https://youtu.be/1W30yXFU0GY
 
-10.2. useMemo, useCallback e React.memo (parte 2) 
+10.2. useMemo, useCallback e React.memo (parte 2) https://youtu.be/3t9-CsBjSuA
 
  
 

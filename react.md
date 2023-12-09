@@ -584,15 +584,15 @@ Capítulo 11 - useReducer
 
 Capítulo 12 - Hooks customizados 
 
-12.1. Como criar nossos hooks 
+12.1. Como criar nossos hooks https://youtu.be/bwXbB6TGlFo
 
  
 
 Capítulo 13 - Class components 
 
-13.1. Class componentes 
+13.1. Class componentes https://youtu.be/1nqaCM0q0Y4
 
-13.2. Convertendo um componente para Class Component 
+13.2. Convertendo um componente para Class Component https://youtu.be/fw1w8OkLKVY
 
  
 

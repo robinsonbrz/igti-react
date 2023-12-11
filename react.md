@@ -598,13 +598,13 @@ Capítulo 13 - Class components
 
 Capítulo 14 - Redux 
 
-14.1. Introdução ao Redux 
+14.1. Introdução ao Redux https://youtu.be/N79A2prCrAU
 
-14.2. Implementar a aplicação usando Redux 
+14.2. Implementar a aplicação usando Redux https://youtu.be/QdaioyCsPqI
 
-14.3. Integrar Redux com React 
+14.3. Integrar Redux com React https://youtu.be/sdbZRvagwR4
 
-14.4. Reducer com Redux toolkit 
+14.4. Reducer com Redux toolkit https://youtu.be/o06bclw7zZA
 
  
 
